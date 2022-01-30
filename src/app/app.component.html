@@ -1,0 +1,22 @@
+<app-http-observable></app-http-observable>
+
+<u>-------------------------------------- ---------------------------</u>
+<p>Service Lesson</p>
+<app-ex-services></app-ex-services>
+
+<u>-----------------------------------------------------------------</u>
+
+<p>{{ message }}</p>
+<app-code-interaction
+  [parentData]="myName"
+  (childEvent)="message = $event"
+></app-code-interaction>
+
+<app-ex-pipes></app-ex-pipes>
+
+<u>-----------------------------------------------------------------</u>
+<button (click)="onClick($event)">click here</button>
+
+<hello name="{{ name }}"></hello>
+<hello select="xxx" [name]="myProp" (click)="showMe()"> </hello>
+<a href="yyy"> GO to youtube </a>

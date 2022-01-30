@@ -1,0 +1,16 @@
+<p>
+  dependency injection - DI is a coding pattern in which a class receives its
+  dependencies from external sources rather thatn creating them itself.
+</p>
+<p>Code without DI- drawbacks <br />- not flexible</p>
+
+<div *ngIf="employees">
+  {{ employees | json }}<br /><br />
+  <p>Employee Names</p>
+  <div *ngFor="let employee of employees">
+    <span>{{ employee.name }}</span>
+  </div>
+</div>
+
+<p>DI as a design pattern</p>
+<p>DI as a framework</p>

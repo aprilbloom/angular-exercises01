@@ -1,0 +1,47 @@
+<u>-----------------------------------------------------------------</u>
+<h2>Pipes exercise</h2>
+
+<p>string</p>
+
+<h5>{{ name | lowercase }}</h5>
+<h5>{{ name | uppercase }}</h5>
+<h5>{{ name | titlecase }}</h5>
+<h5>{{ name | slice: 0:5 }}</h5>
+<h5>{{ name | slice: 5:10 }}</h5>
+
+<h5>{{ person | json }}</h5>
+
+<u>-----------------------------------------------------------------</u>
+<p>percent</p>
+<h5>{{ 0.25 | percent }}</h5>
+
+<u>-----------------------------------------------------------------</u>
+<p>numbers</p>
+<h5>{{ 5.678 | number: '1.2-3' }}</h5>
+<h5>{{ 5.678 | number: '3.4-5' }}</h5>
+<h5>{{ 5.678 | number: '3.1-2' }}</h5>
+
+<u>-----------------------------------------------------------------</u>
+<p>currency</p>
+<h5>{{ 0.25 | currency }}</h5>
+<h5>{{ 0.25 | currency: 'GBP' }}</h5>
+<h5>{{ 0.25 | currency: 'GBP':'code' }}</h5>
+<h5>{{ 0.25 | currency: 'EUR' }}</h5>
+<h5>{{ 0.25 | currency: 'EUR':'code' }}</h5>
+
+<u>-----------------------------------------------------------------</u>
+<p>short dates</p>
+<h5>{{ date }}</h5>
+<h5>{{ date | date: 'short' }}</h5>
+<h5>{{ date | date: 'shortDate' }}</h5>
+<h5>{{ date | date: 'shortTime' }}</h5>
+<p>medium dates</p>
+<h5>{{ date | date: 'medium' }}</h5>
+<h5>{{ date | date: 'mediumDate' }}</h5>
+<h5>{{ date | date: 'mediumTime' }}</h5>
+<p>long dates</p>
+<h5>{{ date | date: 'long' }}</h5>
+<h5>{{ date | date: 'longDate' }}</h5>
+<h5>{{ date | date: 'longTime' }}</h5>
+
+<u>-----------------------------------------------------------------</u>
